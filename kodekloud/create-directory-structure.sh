@@ -14,6 +14,3 @@ mkdir USA India UK
 echo "Washington, D.C" > USA/capital.txt
 echo "London" > UK/capital.txt
 echo "New Delhi" > India/capital.txt
-
-mkdir countries
-cd countries
