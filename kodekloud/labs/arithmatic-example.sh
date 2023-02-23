@@ -1,6 +1,7 @@
 month_number=$1;
 echo "Month Number $1"
 
+# `$#` variable, which contains the number of arguments passed to the script. If $# is zero, then no arguments were provided.
 if [ $# -eq 0 ]; then
   echo "No month number given. Please enter a month number as a command line argument."
   echo "eg: ./print-month-number 5"

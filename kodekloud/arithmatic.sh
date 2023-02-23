@@ -4,17 +4,26 @@ echo "Learn Arithmatic Operations"
 value_1=$1
 value_2=$2;
 
-echo "Addition: "expr $value_1 + $value_2
-echo $((value_1 + $value_2))
+if [ -z $1 ]; then
+  echo "Provider value 1"
+  exit
+elif [ -z $2 ]; then
+  echo "Provider value 2"
+  exit
+fi
 
-echo "Subtraction: "expr $value_2 + $value_1
+
+echo "Addition: $value_1 + $value_2"
+echo $((value_2 + $value_1))
+
+echo "Subtraction $value_2 - $value_1"
 echo $((value_2 - $value_1))
 
-echo "Multiplication: "expr $value_1 \* $value_2
-echo $((value_1 * $value_2))
+echo "Multiplication $value_1 * $value_2"
+echo $((value_2 * $value_2))
 
-echo "Division: "expr $value_2 / $value_1
-echo $((value_2 / $value_1))
+echo "Division $value_2 / $value_1"
+echo $((value_2 / $value_1 | bc))
 
 echo "\nAverage Example by KodeKloud"
 
