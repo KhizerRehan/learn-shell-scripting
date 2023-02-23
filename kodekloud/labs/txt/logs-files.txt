@@ -1,0 +1,2 @@
+finance_log
+marketing_log
