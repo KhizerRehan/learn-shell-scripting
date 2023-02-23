@@ -34,3 +34,15 @@ rocket_status='Failed'
 RocketStatus $rocket_status
 rocket_status='Unknown'
 RocketStatus $rocket_status
+
+## Check if Command line arguments are passed
+
+# The -z flag is a conditional expression used in shell scripts, 
+# and it is typically used to check whether a variable or string is empty. 
+# It returns true if the variable or string is empty, and false otherwise.
+
+if [ -z $1 ]; then
+  echo "No Command line arguments are passed!!"
+else
+  echo "Command line arguments $1"
+fi
