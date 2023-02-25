@@ -46,3 +46,16 @@ if [ -z $1 ]; then
 else
   echo "Command line arguments $1"
 fi
+
+echo "Condtional OR statement"
+
+value_1=$1
+value_2=$2;
+
+if [ -z $value_1 ] || [ -z $value_2 ]; then
+  echo "Either value 1 or value 2 is missing"
+  exit
+else 
+  echo "Value_1: $value_1";
+  echo "Value_2: $value_2";
+fi
