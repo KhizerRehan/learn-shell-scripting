@@ -1,3 +1,7 @@
+# ############################## 
+# KodeKloud Example
+# ############################## 
+
 month_number=$1;
 echo "Month Number $1"
 
