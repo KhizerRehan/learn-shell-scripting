@@ -34,3 +34,8 @@ for file in $(cat ${base_path}/files.txt)
 do
 echo "$(cat $base_path/$file)"
 done;
+
+echo
+# Looping simple
+echo "Loop via simple echo Statement"
+echo {20..30}
